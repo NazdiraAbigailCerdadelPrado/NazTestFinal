@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+<title>Meraki Tabla Speech Recognition</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center" style="color: green;">Tabla de datos</h1>
+      <p class="lead">Instrucciones.- Esta base de datos guarda los audios y textos de speech de los últimos 30 días</p>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"><table class="table table-striped table-sm">
+        <thead>
+        <tr>
+            <th>Fecha y hora</th>
+            <th>Audio</th>
+            <th>Transcript text</th>
+        </tr>
+        </thead>
+        <tbody>
+        {%for i in range(0, len)%}
+            <tr>
+                <td>{{ get_file_date(variables[i][0]) }}</td>
+                <td><a href="/audios/{{variables[i][1]}}.mp3" class="btn btn-outline-success btn-sm">audio.mp3</a></td>
+                <td><a href="/textos/{{variables[i][1]}}.txt" class="btn btn-outline-success btn-sm" download>transcript.txt</a></td>
+            </tr>
+        {%endfor%}
+        </tbody>
+    </table>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>
