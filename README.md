@@ -45,5 +45,5 @@ After wirting the information required and uploading the company logo, it is nec
 3. Create APPLICATION environment variable
 >```` export FLASK_APP=application.py ````
 4. Run de application
->````
+>````flask run --host 0.0.0.0 ````
 
