@@ -16,7 +16,7 @@ After wirting the information required and uploading the company logo, it is nec
 ## How to run.-
 ### At powershell:
 1. Clone this repository
->```` git clone ````
+>```` git clone https://github.com/NazdiraAbigailCerdadelPrado/NazTestFinal.git````
 * Install Python 3.9.7
 2. Open PowerShell as an administrator and run the following commands:
 * Create a new environment
@@ -35,7 +35,7 @@ After wirting the information required and uploading the company logo, it is nec
 
 ### At Ubuntu Linux:
 1. Clone this repository
->```` git clone ````
+>```` git clone https://github.com/NazdiraAbigailCerdadelPrado/NazTestFinal.git ````
 2. Create an new virtual environment. In a terminal window, cd to the project directory and run:
 >```` python -m venv venv ````
 >```` . venv/bin/activate ````
