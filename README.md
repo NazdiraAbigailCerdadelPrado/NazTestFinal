@@ -22,9 +22,9 @@ After wirting the information required and uploading the company logo, it is nec
 * Create a new environment
 >```` python -m venv venv ````
 * Activate the environment
-. .\venv\Scripts\Activate.ps1
+>```` . .\venv\Scripts\Activate.ps1 ```` 
 * Upgrade the pip and install the project requirements
->```` pip install --upgrade pip ````
+>```` pip install --upgrade pip ```` 
 >```` pip install -r requirements.txt ````
 3. Create APPLICATION environment variable
 >```` $env:FLASK_APP=”application.py” ````
@@ -40,8 +40,8 @@ After wirting the information required and uploading the company logo, it is nec
 >```` python -m venv venv ````
 >```` . venv/bin/activate ````
 * Upgrade the pip and install the project requirements
->```` pip install --upgrade pip ````
->```` pip install -r requirements.txt ````
+>```` pip install --upgrade pip ```` 
+>````  pip install -r requirements.txt ````
 3. Create APPLICATION environment variable
 >```` export FLASK_APP=application.py ````
 4. Run de application
